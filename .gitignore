@@ -1,0 +1,3 @@
+# Los JAR se regeneran con build_modpack.py; se distribuyen en el zip del release.
+mods/
+optional/
