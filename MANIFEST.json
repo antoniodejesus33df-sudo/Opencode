@@ -1,0 +1,227 @@
+{
+  "game": "1.21.11",
+  "loader": "fabric",
+  "fabric_loader": "0.20.1",
+  "mods": [
+    {
+      "slug": "fabric-api",
+      "name": "Fabric API",
+      "version": "0.141.6+1.21.11",
+      "version_type": "release",
+      "file": "mods/fabric-api-0.141.6+1.21.11.jar",
+      "sha512": "852d3682c4f353fd0ca86546af8578513e8bcf628377fa9d49c556bc59c5024c69ab56c92fc6dfba11fed19e4316a3f5636e7e07fd3d96f7043b531aef59b637",
+      "source": "https://github.com/FabricMC/fabric-api",
+      "reason": "API base requerida por otros mods",
+      "optional": false
+    },
+    {
+      "slug": "sodium",
+      "name": "Sodium",
+      "version": "mc1.21.11-0.8.14-fabric",
+      "version_type": "release",
+      "file": "mods/sodium-fabric-0.8.14+mc1.21.11.jar",
+      "sha512": "04c43f9e8534b87a52c42ffd51b0e344d4ef92dc9cc52da33d13af6a18bf74b05380d2027f1e0db982698d0aff274c42741c1e21b313b0cd75ed3af005fc98d9",
+      "source": "https://github.com/CaffeineMC/sodium",
+      "reason": "Motor de renderizado; el mayor salto de FPS",
+      "optional": false
+    },
+    {
+      "slug": "lithium",
+      "name": "Lithium",
+      "version": "mc1.21.11-0.21.4-fabric",
+      "version_type": "release",
+      "file": "mods/lithium-fabric-0.21.4+mc1.21.11.jar",
+      "sha512": "f14a5c3d2fad786347ca25083f902139694f618b7c103947f2fd067a7c5ee88a63e1ef8926f7d693ea79ed7d00f57317bae77ef9c2d630bf5ed01ac97a752b94",
+      "source": "https://github.com/caffeinemc/lithium-fabric",
+      "reason": "Optimizaciones de logica del juego",
+      "optional": false
+    },
+    {
+      "slug": "entityculling",
+      "name": "Entity Culling",
+      "version": "1.12.2",
+      "version_type": "release",
+      "file": "mods/entityculling-fabric-1.12.2-mc1.21.11.jar",
+      "sha512": "049c01bf688fe2ddf1baba2223943b3437dea8e706982417bc4ede2547c664222a62b2842706c6789bb9853cf015544395beedd588fcd9608bf5091d8f927e9c",
+      "source": "https://github.com/tr7zw/EntityCulling",
+      "reason": "No renderiza entidades fuera de pantalla",
+      "optional": false
+    },
+    {
+      "slug": "moreculling",
+      "name": "More Culling",
+      "version": "1.6.2",
+      "version_type": "release",
+      "file": "mods/moreculling-fabric-1.21.11-1.6.2.jar",
+      "sha512": "58cec88e84835c543d8604411f89a0984abe51f0332860354355ede290d2442fc33a86ecda1766e0b1a82ba4edfab27f3c9f6855c0af3234e200218b892756f2",
+      "source": "https://github.com/fxmorin/moreculling",
+      "reason": "Caras de bloques innecesarias sin renderizar",
+      "optional": false
+    },
+    {
+      "slug": "cloth-config",
+      "name": "Cloth Config API",
+      "version": "21.11.153+fabric",
+      "version_type": "release",
+      "file": "mods/cloth-config-21.11.153-fabric.jar",
+      "sha512": "8f455489d4b71069e998568cf4e1450116f4360a4eb481cd89117f629c6883164886cf63ca08ac4fc929dd13d1112152755a6216d4a1498ee6406ef102093e51",
+      "source": "https://github.com/shedaniel/ClothConfig/",
+      "reason": "dependencia obligatoria de moreculling",
+      "optional": false
+    },
+    {
+      "slug": "cull-leaves",
+      "name": "Cull Leaves",
+      "version": "4.1.1.1+1.21.11-fabric",
+      "version_type": "release",
+      "file": "mods/cullleaves-fabric-4.1.1.1+1.21.11.jar",
+      "sha512": "5d9116d59be0d002bf83db26a66abc5d153f74db85806543996217f961c6238e44555bf360ff10f517a3c9e4a276d63e01cf1100fcc7bda52d1c87422fc8c86e",
+      "source": "https://github.com/TeamMidnightDust/CullLeaves",
+      "reason": "Culling de hojas ocultas",
+      "optional": false
+    },
+    {
+      "slug": "midnightlib",
+      "name": "MidnightLib",
+      "version": "1.10.0+1.21.11-fabric",
+      "version_type": "release",
+      "file": "mods/midnightlib-fabric-1.10.0+1.21.11.jar",
+      "sha512": "3dfe09d3db18650514422cd70afed14ae97207e37ea9e82a61d6b12ed9fc2c4eeebc0aef010b9dd4b42e4941a71fc2c18a2f3e7fdc6113b3881ad6534762df4f",
+      "source": "https://github.com/TeamMidnightDust/MidnightLib",
+      "reason": "dependencia obligatoria de cull-leaves",
+      "optional": false
+    },
+    {
+      "slug": "immediatelyfast",
+      "name": "ImmediatelyFast",
+      "version": "1.14.3+1.21.11-fabric",
+      "version_type": "release",
+      "file": "mods/ImmediatelyFast-Fabric-1.14.3+1.21.11.jar",
+      "sha512": "2564cb28259352c3aa5759aceca62667de08a7860a40910dad40a043af851a074b2d75cef50b9fa6f1971febb3a5ecebe4067cbd4b60e63ef711b85f4bc21407",
+      "source": "https://github.com/RaphiMC/ImmediatelyFast",
+      "reason": "Renderizado instantaneo de GUI y items",
+      "optional": false
+    },
+    {
+      "slug": "noisiumforked",
+      "name": "NoisiumForked",
+      "version": "2.8.3+mc1.21.11",
+      "version_type": "release",
+      "file": "mods/noisium-fabric-2.8.3+mc1.21.11.jar",
+      "sha512": "03d4c116204ee8cb4f95b668576c9e8c099ed939c150ff0cf4ff094ae52b0c5f6214c1292c94f25ea7f614254151d1ff2db68ecaddc9f56486189d29fa3a24eb",
+      "source": "https://github.com/coredex-source/noisium",
+      "reason": "Generacion de terreno mas rapida",
+      "optional": false
+    },
+    {
+      "slug": "ferrite-core",
+      "name": "FerriteCore",
+      "version": "8.2.0-fabric",
+      "version_type": "release",
+      "file": "mods/ferritecore-8.2.0-fabric.jar",
+      "sha512": "3210926a82eb32efd9bcebabe2f6c053daf5c4337eebc6d5bacba96d283510afbde646e7e195751de795ec70a2ea44fef77cb54bf22c8e57bb832d6217418869",
+      "source": "https://github.com/malte0811/FerriteCore",
+      "reason": "Menos memoria y menos pausas por GC",
+      "optional": false
+    },
+    {
+      "slug": "badoptimizations",
+      "name": "BadOptimizations",
+      "version": "2.4.1",
+      "version_type": "release",
+      "file": "mods/BadOptimizations-2.4.1-1.21.11.jar",
+      "sha512": "ff91f1866f21a13a32d379080b8efb5d4e07577591228c1d307b34d052696c9bdcbaf7706208dfbac56abc2c29482a15edcbf11f69fc0a01e459c4c20a5c2c28",
+      "source": "https://github.com/imthosea/BadOptimizations/",
+      "reason": "Microoptimizaciones del motor",
+      "optional": false
+    },
+    {
+      "slug": "iris",
+      "name": "Iris Shaders",
+      "version": "1.10.8+1.21.11-fabric",
+      "version_type": "release",
+      "file": "optional/iris-fabric-1.10.8+mc1.21.11.jar",
+      "sha512": "f0cad4b6af593b6fc25738c4ef5a2b346125f9693d25a0d486858e54798d2ea87b24d1497e1bb4391729d7d9e490f42771f7fb468d4e1420e372d8643f9e2055",
+      "source": "https://github.com/IrisShaders/Iris",
+      "reason": "Shaders: baja mucho los FPS",
+      "optional": true
+    },
+    {
+      "slug": "sodium-extra",
+      "name": "Sodium Extra",
+      "version": "mc1.21.11-0.9.5+fabric",
+      "version_type": "release",
+      "file": "optional/sodium-extra-fabric-0.9.5+mc1.21.11.jar",
+      "sha512": "60716a8f0780dcedc230dda3c93265d55d823313a0846d6e7da482ed0c38506e04079ab72629c8c2201f1b248431d0037fc44e9be89e664b507be53a9a1668f4",
+      "source": "https://github.com/FlashyReese/sodium-extra-fabric",
+      "reason": "Opciones extra (ligero overhead)",
+      "optional": true
+    },
+    {
+      "slug": "reeses-sodium-options",
+      "name": "Reese's Sodium Options",
+      "version": "mc1.21.11-2.2.4+fabric",
+      "version_type": "release",
+      "file": "optional/reeses-sodium-options-fabric-2.2.4+mc1.21.11.jar",
+      "sha512": "224e324effcaa03a38582b05c09cbd79a5922e916888b45849d966a6a7f30a7be18a8cc2ea09f44e79e6ea1a8d143a28c3cbfafdb398025b48ab1a1a7d71fd49",
+      "source": "https://github.com/FlashyReese/reeses-sodium-options",
+      "reason": "Panel de opciones (solo UI)",
+      "optional": true
+    },
+    {
+      "slug": "spark",
+      "name": "spark",
+      "version": "1.10.170-fabric",
+      "version_type": "release",
+      "file": "optional/spark-1.10.170-fabric.jar",
+      "sha512": "7460ac92a1241f373238b7afe3c9e8dc67101d3cc6d95322f9a86b7db4dc3be5da5e3ce80ad9653bff682f796a79cd8384851e0ed757b468f2f52b6bde71cb00",
+      "source": "https://github.com/lucko/spark",
+      "reason": "Profiler (solo diagnostico)",
+      "optional": true
+    },
+    {
+      "slug": "krypton",
+      "name": "Krypton",
+      "version": "0.2.10",
+      "version_type": "release",
+      "file": "optional/krypton-0.2.10.jar",
+      "sha512": "4dcd7228d1890ddfc78c99ff284b45f9cf40aae77ef6359308e26d06fa0d938365255696af4cc12d524c46c4886cdcd19268c165a2bf0a2835202fe857da5cab",
+      "source": "https://github.com/astei/krypton",
+      "reason": "Red: solo util en multijugador",
+      "optional": true
+    },
+    {
+      "slug": "dynamic-fps",
+      "name": "Dynamic FPS",
+      "version": "3.11.6",
+      "version_type": "release",
+      "file": "optional/dynamic-fps-3.11.6+minecraft-1.21.11-fabric.jar",
+      "sha512": "c45652252e2176cb8e2c44dfd9032c617135a100dcf161b9e6e6717803c14d1359d0f940fa10dc1aa6ad80669983f4b9c5636c0c2953d3314e06f893f0cdc736",
+      "source": "https://go.lostluma.net/dynamic-fps-source",
+      "reason": "Baja FPS en segundo plano, no los aumenta",
+      "optional": true
+    },
+    {
+      "slug": "fps-reducer",
+      "name": "FPS Reducer",
+      "version": "1.21.11-2.15",
+      "version_type": "release",
+      "file": "optional/FpsReducer2-fabric-1.21.11-2.15.jar",
+      "sha512": "fbac02195a2c13b49e43d256b05086af86b92935fb9e479ba72360d4cd50643dcbaf42825d8277b0d46e6518be918a2579767a41550c8acb404f7e2148425e6e",
+      "source": "https://modrinth.com/mod/fps-reducer",
+      "reason": "Alternativa a dynamic-fps",
+      "optional": true
+    },
+    {
+      "slug": "c2me-fabric",
+      "name": "Concurrent Chunk Management Engine (Fabric)",
+      "version": "0.3.6.0.0",
+      "version_type": "release",
+      "file": "optional/c2me-fabric-mc1.21.11-0.3.6.0.0.jar",
+      "sha512": "c9b11100572fb71c3080ff11b011467624e8013b9942aade09a5c77eb62b3289667bad70501ddea8f35deb0a5d26884b79f76d4ed112d32342471ca7384b788a",
+      "source": "https://github.com/RelativityMC/C2ME-fabric",
+      "reason": "Chunks concurrentes: experimental",
+      "optional": true
+    }
+  ]
+}
