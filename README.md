@@ -21,7 +21,7 @@ Modpack de **Minecraft Java 1.21.11 (Fabric)** con un único objetivo: **el mayo
 | FerriteCore | 8.2.0 | Menos RAM y menos pausas por GC |
 | BadOptimizations | 2.4.1 | Microoptimizaciones del motor |
 
-**Deliberadamente NO incluidos en `mods/`:** Iris (los shaders destruyen los FPS), Sodium Extra y Reese's Options (UI extra), spark (profiler), Krypton (solo red), Dynamic FPS/FPS Reducer (bajan FPS en segundo plano, no los suben), C2ME (experimental). Están en `optional/` por si los necesitas.
+**Deliberadamente NO incluidos:** Iris (los shaders destruyen los FPS), Sodium Extra y Reese's Options (UI extra), spark (profiler), Krypton (solo red), Dynamic FPS/FPS Reducer (bajan FPS en segundo plano, no los suben), C2ME (experimental). El ZIP del Release es la versión compacta: solo los 12 JARs esenciales. Si necesitas algun extra, descárgalo de Modrinth e inclúyelo en `mods/`; el repositorio guarda los nombres y versiones en `MANIFEST.json`.
 
 ## Instalación
 
